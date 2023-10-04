@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Inter } from '@next/font/google';
 
-import { Loading } from "./Loading/page";
+import Loading from "./Loading/page";
 import "./page.css";
 
 const inter = Inter({
@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 
-export default function Home() {
+export default function Home(): React.ReactNode {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
